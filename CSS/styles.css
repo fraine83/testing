@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
     --iriscolor: #4d5ae5;
@@ -8,11 +8,16 @@
     --whitecolor: white;
     --slatecolor: #434455;
 }
-
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    background-color: var(--whitecolor);
+    letter-spacing: 0.01em;
+}
 .link-logo {
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-size: 26px;
     line-height: 1.5;
     font-weight: 800;
 }
@@ -29,7 +34,7 @@
     color: var(--navcolor);
     text-decoration: none;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.15;
     letter-spacing: 0.05em;
 }
@@ -49,7 +54,7 @@
 .contacts-info .info {
     color: var(--navcolor);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.15;
     letter-spacing: 0.05em;
     text-decoration: none;
@@ -89,7 +94,21 @@
 
 .btn.primary:hover,
 .btn.primary:focus {
-    background-color: hotpink
+    background-color: hotpink;
+}
+.btn.filter {
+    background-color: var(--whitecolor);
+    color: var(--navyblue);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 10px;
+}
+.btn.filter:hover,
+.btn.filter:focus,
+.btn.filter.primary {
+    background-color: var(--oceancolor);
+    color: var(--whitecolor);
 }
 
 .babelist.parentlist {
@@ -112,21 +131,21 @@
     font-size: 36x;
     font-weight: 700;
     line-height: 1.5px;
-    letter-spacing: 0.05em
+    letter-spacing: 0.05em;
 }    
 .teamnames {
     font-weight: 800;
     font-size: 20px;
     line-height: 1.5;
-    letter-spacing: 0.05em
-    color: var(--navyblue)
+    letter-spacing: 0.05em;
+    color: var(--navyblue);
 }
 
 .title {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.05em
+    letter-spacing: 0.05em;
     color: var(--slatecolor);
 }
 .botbg {
@@ -138,8 +157,25 @@
 .footress {
     color: white;
     width: 265px;
-    height: 70px;
+    height: 20p;
     top: 3300px;
     left: 156px;
     font-weight: 400;
+}
+.pictures {
+    text-decoration: none;
+}
+.pictures .parentlists2 {
+    color: var(--navcolor);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.pictures .babelist2 {
+    color: var(--navcolor);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
