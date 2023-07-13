@@ -8,13 +8,20 @@
     --whitecolor: white;
     --slatecolor: #434455;
     --ashwhite: rgb(242, 237, 237);
-    --cloud: #f4cf4fd;
+    --cloud: #f4f4fd;
 }
 body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
     color: var(--slatecolor);
     font-size: 16px;
+}
+.page-header {
+    font-family: Raleway;
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .logo-link {
@@ -40,6 +47,35 @@ body {
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em;
+}
+.nav-menu {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.32px;
+}
+.contacts-menu {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.32px;
+}
+.filters {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .list {
@@ -149,6 +185,13 @@ bg-team {
 }
 .footer-description {
     color: var(--cloud);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;  /* 150% */
+    display: flex;
+    letter-spacing: 0.32px;
 }
 .project {
     text-decoration: none;
