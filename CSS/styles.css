@@ -54,7 +54,6 @@ body {
     gap: 40px;
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
     /* 150% */
@@ -148,10 +147,10 @@ bg-team {
     font-size: 16px;
     font-weight: 400;
 }
-.benefits .title {
+.benefits .title{
    font-size: 20px;
    font-weight: 500;
-   color: var(--navyblue);
+   color: var(--navyblue); 
 }
 .description.title {
     font-size: 14px;
