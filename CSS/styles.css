@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
 
 :root {
     --iriscolor: #4d5ae5;
@@ -7,175 +7,162 @@
     --oceancolor: #2196F3;
     --whitecolor: white;
     --slatecolor: #434455;
+    --ashwhite: rgb(242, 237, 237);
+    --cloud: #f4cf4fd;
 }
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    background-color: var(--whitecolor);
-    letter-spacing: 0.01em;
-}
-.link-logo {
-    text-decoration: none;
-    /*font-family: 'Raleway', sans-serif;*/
-    font-size: 26px;
-    line-height: 1.5;
-    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: var(--slatecolor);
+    font-size: 16px;
 }
 
-.web-logo {
+.logo-link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.logo {
     color: var(--iriscolor);
 }
 
-.studio-logo {
+.studio {
     color: var(--navyblue);
 }
 
-.nav .pages {
-    color: var(--navcolor);
+.nav-menu .page {
+    color: var(--navyblue);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
     line-height: 1.15;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
 }
 
-.lists {
+.list {
     list-style-type: none;
 }
 
-.nav .pages:hover,
-.nav .pages:focus,
-.nav .pages.currentoption,
-.contacts-info .info:hover,
-.contacts-info .info:focus {
-    color: var(--oceancolor);
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .info:hover,
+.contacts-menu .info:focus {
+    color: var(--iriscolor);
 }
 
-.contacts-info .info {
-    color: var(--navcolor);
-    font-weight: 500;
-    font-size: 18px;
+.contacts-menu .item {
+    color: var(--slatecolor); 
+    font-weight: 400;
     line-height: 1.15;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }  
-.bg-section-1 {
+.bg-hero {
     background: var(--navyblue);
-    text-align: center;
-    width: 1440px;
-    height: 600px;
-    line-height: 60px;
-    left: 0px;
-    top: 72px;
 }
-.h1-title {
+.hero-title {
     color: var(--whitecolor);
     font-size: 56px;
-    font-weight: 700;
+    color: var(--whitecolor);
     line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 }
-.btn {
+bg-team {
+    background-color: var(--cloud);
+}
+.button.filter {
+    background-color: var(--cloud);
+    color: var(--iriscolor);
+    font-weight: 500;
+    line-height: 1.62;
+}
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.primary {
+    background-color: var(--oceancolor);
+    color: var(--cloud);    
+}
+
+.button {
     cursor: pointer;
     border-color: transparent;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    line-height: 1.5;
     font-family: inherit;
 }
-.btn.primary {
-    background-color: var(--oceancolor);
+.button.primary {
+    background-color:var(--iriscolor)
     color: var(--whitecolor);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
+    line-height: 1.87;
     letter-spacing: 0.05;
 }
-
-.btn.primary:hover,
-.btn.primary:focus {
-    background-color: hotpink;
-}
-.btn.filter {
-    background-color: var(--whitecolor);
-    color: var(--navyblue);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    padding: 10px;
-}
-.btn.filter:hover,
-.btn.filter:focus,
-.btn.filter.primary {
+.button.primary:hover,
+.button.primary:focus {
     background-color: var(--oceancolor);
-    color: var(--whitecolor);
 }
 
-.babelist.parentlist {
-    font-weight: 800;
+.benefits .description {
+    color: var(--slatecolor);
+    line-height: 1.71;
+    font-size: 16px;
+    font-weight: 400;
+}
+.benefits .title {
+   font-size: 20px;
+   font-weight: 500;
+   color: var(--navyblue);
+}
+.description.title {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.17;
     color: var(--slatecolor);
 }
-.gradetitle {
+.section-title {
     text-align: center;
     color: var(--navyblue);
     font-size: 36x;
     font-weight: 700;
     line-height: 1.5px;
-    letter-spacing: 0.05em
 }
-.teammates {
-    text-align: center;
-    color: var(--navyblue);
-    font-size: 36x;
-    font-weight: 700;
-    line-height: 1.5px;
-    letter-spacing: 0.05em;
-}    
-.teamnames {
-    font-weight: 800;
+.team .name {
+    font-weight: 500;
     font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     color: var(--navyblue);
 }
 
-.title {
+.team .position {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.05em;
     color: var(--slatecolor);
 }
-.botbg {
+.page-footer.bg-footer {
     background-color: var(--navyblue);
 }
-.studio-logo1 {
-    color: white;
+.studio-footer {
+    color: var(--cloud);
 }
-.footress {
-    color: white;
-    width: 265px;
-    height: 20p;
-    top: 3300px;
-    left: 156px;
-    font-weight: 400;
+.footer-description {
+    color: var(--cloud);
 }
-.pictures {
+.project {
     text-decoration: none;
 }
-.pictures .parentlists2 {
-    color: var(--navcolor);
-    font-weight: 700;
-    font-size: 18px;
+.project .name {
+    color: var(--navyblue);
+    font-weight: 500;
+    font-size: 20px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
 }
-.pictures .babelist2 {
-    color: var(--navcolor);
-    font-weight: 700;
+.project .type {
+    color: var(--slatecolor);
+    font-weight: 400;
     font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    line-height: 1.87;
 }
