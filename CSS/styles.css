@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https: //cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css');
 
 :root {
     --iriscolor: #4d5ae5;
     --navyblue: #2E2F42;
     --navcolor: black;
-    --oceancolor: #2196F3;
+    --oceancolor: #404bbf;
     --whitecolor: white;
     --slatecolor: #434455;
     --ashwhite: rgb(242, 237, 237);
     --cloud: #f4f4fd;
 }
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
@@ -20,8 +34,16 @@ body {
     font-family: Raleway;
     display: inline-flex;
     height: 24px;
-    align-items: center;
     flex-shrink: 0;
+}
+.page-header {
+    box-sizing: border-box;
+    width: 1440px;
+    height: 72px;
+    padding: 30px;
+    background-color: var(--cloud);
+    max-width: 100%;
+    height: auto;
 }
 
 .logo-link {
@@ -47,6 +69,7 @@ body {
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    gap: 40px;
 }
 .nav-menu {
     display: inline-flex;
@@ -57,19 +80,27 @@ body {
     font-weight: 500;
     line-height: 24px;
     /* 150% */
-    letter-spacing: 0.32px;
+    letter-spacing: 0.32em;
+}
+.contacts-menu .item {
+    color: var(--navyblue);
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        gap: 40px;
 }
 .contacts-menu {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 40px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.32px;
+   display: inline-flex;
+   align-items: flex-end;
+   gap: 40px;
+   font-family: Roboto;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   float: left;
+   /* 150% */
+   letter-spacing: 0.32em;
 }
 .filters {
     display: inline-flex;
@@ -78,7 +109,9 @@ body {
 }
 
 .list {
-    list-style-type: none;
+    list-style-type: none;  
+    padding: 0;
+    margin: 0;
 }
 
 .nav-menu .page:hover,
@@ -89,13 +122,6 @@ body {
     color: var(--iriscolor);
 }
 
-.contacts-menu .item {
-    color: var(--slatecolor); 
-    font-weight: 400;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}  
 .bg-hero {
     background: var(--navyblue);
     text-align: center;
@@ -113,8 +139,15 @@ body {
     padding: 165px 0;
     letter-spacing: 1.12px;
 }
-.bg-team {
+.section.bg-team {
     background-color: var(--cloud);
+    display: block;
+    max-width: 100%;
+    padding: 30;
+    width: 1440px;
+    height: 732px;
+    flex-shrink: 0;
+    max-width: 100%;
 }
 .button.filter {
     background-color: var(--cloud);
@@ -141,6 +174,8 @@ body {
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
+    box-sizing: border-box;
+    flex-shrink: 0;
     box-shadow: 0px 4px 4px 0px
         
 }
@@ -152,11 +187,11 @@ body {
     font-weight: 500;
     letter-spacing: 0.05em;
     display: inline-flex;
-    align-items: flex-start;
-    gap: 10px;
-    align-items: center;
     gap: 10px;
     border-radius: 4px;
+    position: relative;
+    color: var(--whitecolor);
+    text-align: center;
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -173,13 +208,16 @@ body {
     flex-direction: row;
     width: 280p;
     gap: 24px;
-    
 }
 .team {
     display: inline-flex;
     flex-direction: row;
     width: 280p;
     gap: 24px;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+   
 }
 .benefits .description {
     color: var(--slatecolor);
@@ -218,7 +256,14 @@ body {
 }
 .page-footer.bg-footer {
     background-color: var(--navyblue);
-}
+    width: 1440px;
+    height: 312px;
+    padding: 30px;
+    text-align: start;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    padding: 30px;
+  }
 .studio-footer {
     color: var(--cloud);
 }
@@ -229,8 +274,11 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;  /* 150% */
-    display: flex;
     letter-spacing: 0.32px;
+    width: 290px;
+    flex-shrink: 0;
+    display: table-cell;
+    vertical-align: middle;
 }
 .project {
     text-decoration: none;
@@ -247,4 +295,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.87;
+}
+.projects .list{
+    display: table;
 }
