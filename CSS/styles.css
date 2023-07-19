@@ -35,12 +35,12 @@ body  {
     font-family: Raleway;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 24px;
     flex-shrink: 0;
 }
 .page-header {
     box-sizing: border-box;
+    justify-content: space-around;
     width: 1440px;
     height: 72px;
     padding: 30px 5%;
