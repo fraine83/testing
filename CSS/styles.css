@@ -43,7 +43,7 @@ body  {
     justify-content: space-between;
     width: 1440px;
     height: 72px;
-    padding: 30px 5%;
+    padding: 30px;
     background-color: var(--cloud);
     max-width: 100%;
     height: auto;
@@ -85,16 +85,14 @@ body  {
     font-weight: 500;
     line-height: 24px;
     /* 150% */
-    letter-spacing: 0.32em;
-    padding: 20px 50px;
+    letter-spacing: 0.32em;   
 }
 .contacts-menu .item {
     color: var(--navyblue);
         text-decoration: none;
         font-weight: 500;
-        line-height: 1.15;
-        letter-spacing: 0.02em;
-        gap: 40px;
+        line-height: 1.15px;
+        letter-spacing: 0.05em;
 }
 .contacts-menu {
    display: inline-flex;
@@ -104,23 +102,14 @@ body  {
    font-size: 16px;
    font-weight: 500;
    line-height: 24px;
-   float: left;
    /* 150% */
-   letter-spacing: 0.32em;
-}
-.filters {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 24px;
-    padding-top: 100px;
-    padding-left: 150px;
-    
+   letter-spacing: 0.05em;
 }
 
 .list {
     list-style-type: none;  
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 .nav-menu .page:hover,
@@ -142,29 +131,19 @@ body  {
     color: var(--whitecolor);
     font-family: 'Roboto', sans-serif;
     font-size: 56px;
-    text-align: center;
     line-height: 60px; 
     font-weight: 700;
-    padding: 165px 0;
+    padding-top: 150px;
     letter-spacing: 1.12px;
 }
 .section.bg-team {
     background-color: var(--cloud);
-    display: block;
     max-width: 100%;
     padding: 30;
     width: 1440px;
     height: 732px;
     flex-shrink: 0;
     max-width: 100%;
-    text-align: center;
-    justify-content: center;
-}
-.button.filter {
-    background-color: var(--cloud);
-    color: var(--iriscolor);
-    font-weight: 500;
-    line-height: 1.62;
 }
 .button.filter:hover,
 .button.filter:focus,
@@ -177,7 +156,7 @@ body  {
     cursor: pointer;
     border-color: transparent;
     letter-spacing: 0.03em;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     font-family: inherit;
@@ -205,6 +184,18 @@ body  {
 .button.primary:focus {
     background-color: var(--oceancolor);
 }
+    
+.button.filter {
+    color: var(--iriscolor);
+    font-weight: 500;
+    line-height: 1.62;
+    background-color: var(--cloud);
+}    
+.filters {
+    align-items: flex-end;
+    gap: 24px;
+    display: inline-flex;
+}
 .benefits {
     display: inline-flex;
     width: 280p;
@@ -228,7 +219,6 @@ body  {
     flex-direction: row;
     width: 280p;
     gap: 24px;
-    vertical-align: middle;
     max-width: 100%;
     height: auto;
     padding-top: 150px;
