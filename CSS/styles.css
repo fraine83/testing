@@ -1,4 +1,7 @@
-  img  {
+:root {
+ --iriscolor: #4d5ae5;
+}
+img  {
     display: block;
     max-width: 100%;
     height: auto;
@@ -16,5 +19,51 @@
 }
 .post-heading1 {
     border: 2px dashed white;
+
+}
+.head {
+    font-size: 16px;
+    color: navy;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+
+.hwloko {
+    background-color:snow;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+
+    max-width: 300px;
+    height: 500px;
+    text-align: center;
+}
+.geho {
+    color: var(--iriscolor);
+    letter-spacing: .03em;
+    text-decoration: underline;
+}
+.checkicon {
+    position: relative;
+    left: 130px;
+    bottom: -150px;
+
+ 
+ 
+ 
+ 
+
+   
+   
+   
+
+    
+    
+
+    
+    
+    
+    
 
 }
