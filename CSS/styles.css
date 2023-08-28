@@ -6,36 +6,60 @@ img  {
     max-width: 100%;
     height: auto;
 }
+
+.container {
+    padding-top: 12px;
+    margin: 0 auto;
+    background-color:silver;  
+
+}
+    
+
 .post1 {
     padding: 20px;
-
-    max-width: 400px;
+    width: 0 auto;
     background-color: teal;
     border: 2px solid #245624;
+    border-radius: 50px;
 }
 .post-thumb1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 38px;
-    border: 2px solid hotpink;
+    background-color: #4d5ae5;
+    justify-content: space-around;
+}
+.lite {
+    margin-left: -200px;
 }
 .post-heading1 {
     border: 2px dashed white;
-
 }
+
+
 .head {
     font-size: 16px;
-    color: navy;
-    font-weight: 300;
+    color:brown;
+    font-size: 18px; 
+    font-weight: 500;
     letter-spacing: .05em;
+}
+.head {
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
 .hwloko {
-    background-color:snow;
+    /*position: relative;
+    transform: translateY(10%);*/
+    background-color: snow;
     border: 1px solid green;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
 
-    max-width: 300px;
+    width: 300px;
     height: 500px;
     text-align: center;
 }
@@ -46,24 +70,97 @@ img  {
 }
 .checkicon {
     position: relative;
-    left: 130px;
-    bottom: -150px;
+    
+    left: 100px;
+    bottom: -120px;
+}
+.items  {
+    position: fixed;
+    right: -10px;
+    top: -120px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 
- 
- 
- 
+    color:indigo;
+    background-color:aqua;
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid blanchedalmond;
+    padding: 0.5em;
+    margin: 25vh auto 0;
  
 
-   
-   
-   
+}
+.item {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .03em;
+    line-height: 1.17em;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 0.5em;
+} 
+.large {
+    font-size: 26px;
+    color:#4d5ae5
+}
+.one {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;  
+  align-self: center;
 
-    
-    
+  order: 1;
 
+}
+.two {
+    flex-grow: 1;
+    flex-shrink: 3;
+    flex-basis: 250px;
+    color:blue;     
     
-    
-    
+order: -0;
+align-self: baseline;
+}
+.three  {
+    color: black;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    align-self:self-end;
+    justify-self:last baseline;
+    order: -0;
     
 
 }
+.items .four {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    color: #0a100a;
+    order: 1;
+ }
+ .five5 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+   
+   
+ }
+ 
+ 
+
+   
+   
+   
+
+    
+    
+
+    
+    
+    
+    
+
+
